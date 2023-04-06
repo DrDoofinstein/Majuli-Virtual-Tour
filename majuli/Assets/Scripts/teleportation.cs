@@ -37,6 +37,7 @@ public class teleportation : MonoBehaviour
         // }  
         Debug.Log(RenderSettings.skybox.name);
         float angle = Camera.main.transform.eulerAngles.y;
+        Debug.Log("and the angle is " + angle);
 
         //up >325 <25
         //right >25 <140
@@ -44,30 +45,92 @@ public class teleportation : MonoBehaviour
         //left >225 <325
 
         // vrCam.eulerAngles.x >= 25.0f & vrCam.eulerAngles.x < 79.0f
-        if(RenderSettings.skybox.name == "88"){
-            if(angle >=345 || angle<=15){
 
-                if(Input.GetKeyDown(KeyCode.UpArrow)){
-                    Debug.Log("tryin to change");
-                    RenderSettings.skybox = Resources.Load("MaterialsNorth/87", typeof(Material)) as Material;
+        if(Input.GetKeyDown(KeyCode.UpArrow)){
+            // Debug.Log("tryin to change");
+            // RenderSettings.skybox = Resources.Load("MaterialsNorth/86", typeof(Material)) as Material;
+            if(RenderSettings.skybox.name == "DB65"){
+                if(angle >= 340 && angle <= 20){
+                    if(Input.GetKeyDown(KeyCode.UpArrow)){
+                        Debug.Log("tryin to chang 68e");
+                        RenderSettings.skybox = Resources.Load("MaterialsNorth/DB68", typeof(Material)) as Material;
+                    }
+                }else if(angle >= 250 && angle <= 290){
+
+                    if(Input.GetKeyDown(KeyCode.UpArrow)){
+                        Debug.Log("tryin to change 64");
+                        RenderSettings.skybox = Resources.Load("MaterialsNorth/DB64", typeof(Material)) as Material;
+                    }
                 }
+                
+            }else if(RenderSettings.skybox.name == "DB68"){
+                if(angle >= 160 && angle <= 200){
+
+                    if(Input.GetKeyDown(KeyCode.UpArrow)){
+                        Debug.Log("tryin to change 65");
+                        RenderSettings.skybox = Resources.Load("MaterialsNorth/DB65", typeof(Material)) as Material;
+                    }
+                }else if(angle >= 250 && angle <= 290){
+                    if(Input.GetKeyDown(KeyCode.UpArrow)){
+                        Debug.Log("tryin to change 66");
+                        RenderSettings.skybox = Resources.Load("MaterialsNorth/DB66", typeof(Material)) as Material;
+                    }
+                }
+                
+            }else if(RenderSettings.skybox.name == "DB66"){
+                if(angle >= 70 && angle <= 110){
+                    if(Input.GetKeyDown(KeyCode.UpArrow)){
+                        Debug.Log("tryin to change 68");
+                        RenderSettings.skybox = Resources.Load("MaterialsNorth/DB68", typeof(Material)) as Material;
+                    }
+                }else if(angle >= 160 && angle <= 200){
+
+                    if(Input.GetKeyDown(KeyCode.UpArrow)){
+                        Debug.Log("tryin to change 64");
+                        RenderSettings.skybox = Resources.Load("MaterialsNorth/DB64", typeof(Material)) as Material;
+                    }
+                }
+                
+            }else if(RenderSettings.skybox.name == "DB64"){
+                if(angle >= 340 && angle <= 20){
+                    if(Input.GetKeyDown(KeyCode.UpArrow)){
+                        Debug.Log("tryin to change 66");
+                        RenderSettings.skybox = Resources.Load("MaterialsNorth/DB66", typeof(Material)) as Material;
+                    }
+                }else if(angle >= 70 && angle <= 110){
+                    if(Input.GetKeyDown(KeyCode.UpArrow)){
+                        Debug.Log("tryin to change 65");
+                        RenderSettings.skybox = Resources.Load("MaterialsNorth/DB65", typeof(Material)) as Material;
+                    }
+                }
+                
             }
-        }else if(RenderSettings.skybox.name == "87"){
-            if(angle >= 340 || angle <= 20){
+            // else if(RenderSettings.skybox.name == "88"){
+            //     if(angle >=345 || angle<=15){
 
-                if(Input.GetKeyDown(KeyCode.UpArrow)){
-                    Debug.Log("tryin to change");
-                    RenderSettings.skybox = Resources.Load("MaterialsNorth/86", typeof(Material)) as Material;
-                }
-            }else if(angle >= 265 || angle <= 295){
+            //         if(Input.GetKeyDown(KeyCode.UpArrow)){
+            //             Debug.Log("tryin to change");
+            //             RenderSettings.skybox = Resources.Load("MaterialsNorth/87", typeof(Material)) as Material;
+            //         }
+            //     }
+            // }else if(RenderSettings.skybox.name == "87"){
+            //     if(angle >= 340 || angle <= 20){
 
-                if(Input.GetKeyDown(KeyCode.UpArrow)){
-                    Debug.Log("tryin to change");
-                    RenderSettings.skybox = Resources.Load("MaterialsNorth/88", typeof(Material)) as Material;
-                }
-            }
-            
+            //         if(Input.GetKeyDown(KeyCode.UpArrow)){
+            //             Debug.Log("tryin to change");
+            //             RenderSettings.skybox = Resources.Load("MaterialsNorth/86", typeof(Material)) as Material;
+            //         }
+            //     }else if(angle >= 265 || angle <= 295){
+
+            //         if(Input.GetKeyDown(KeyCode.UpArrow)){
+            //             Debug.Log("tryin to change");
+            //             RenderSettings.skybox = Resources.Load("MaterialsNorth/88", typeof(Material)) as Material;
+            //         }
+            //     }
+                
+            // }
         }
+        
         
 
         // //front
