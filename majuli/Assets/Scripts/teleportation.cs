@@ -42,7 +42,7 @@ public class teleportation : MonoBehaviour
 
                 if(tokens.Length < 4)
                 {
-                    Debug.LogError("Line number: " + line + "Not Possible!!!");
+                    Debug.Log("Line number: " + line + "Not Possible!!!");
                 }
                 else
                 {

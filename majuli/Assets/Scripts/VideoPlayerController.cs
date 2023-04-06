@@ -17,6 +17,6 @@ public class VideoPlayerController : MonoBehaviour
 
     void OnVideoCompleted(VideoPlayer vp)
     {
-        SceneManager.LoadScene("HomeScene");
+        SceneManager.LoadScene("BJKG");
     }
 }
