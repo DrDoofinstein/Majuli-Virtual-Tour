@@ -16,7 +16,7 @@ public class teleportation : MonoBehaviour
     public Material nextSkybox;
 
     private int linescount = 0;
-    private string folderpath = "D:\\Downloads\\Majuli-Virtual-Tour\\majuli\\Assets\\Resources\\Modified_Materials";
+    private string folderpath = "D:\\code\\Unity\\Majuli-Virtual-Tour\\majuli\\Assets\\Resources\\Modified_Materials";
 
     private IDictionary<string, List<To_image>> dict = new Dictionary<string, List<To_image>>();
 

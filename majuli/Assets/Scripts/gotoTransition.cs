@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class gotoTransition : MonoBehaviour { 
+public class gotoTransition : MonoBehaviour {
 
-    
+    public GameObject objectToToggle;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +31,8 @@ public class gotoTransition : MonoBehaviour {
 
                 if (hit.collider.gameObject.name == "Cylinder")
                 {
-                    SceneManager.LoadScene("TransitionVideoScene");
+                    //SceneManager.LoadScene("TransitionVideoScene");
+                    objectToToggle.SetActive(!objectToToggle.activeSelf);
 
                 }
 
